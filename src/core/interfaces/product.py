@@ -1,15 +1,16 @@
 from abc import ABC, abstractmethod
 
+
 class AbstractProduct(ABC):
     """Абстрактный класс продукта"""
 
-    @abstractproduct
+    @abstractmethod
     def get_sku(self) -> str:
         """Уникальный идентификатор товара"""
         pass
 
     @abstractmethod
-    def get_name(self) -> str
+    def get_name(self) -> str:
         """Название товара"""
         pass
 

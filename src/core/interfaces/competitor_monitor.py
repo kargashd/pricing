@@ -3,6 +3,7 @@ from typing import List
 
 from src.core.interfaces.product import AbstractProduct
 
+
 class AbstractMonitor(ABC):
     """Абстрактный класс мониторинга конкуретнов"""
 
