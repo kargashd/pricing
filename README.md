@@ -34,12 +34,13 @@ git clone https://github.com/kargashd/pricing.git
 cd pricing
 python -m venv .venv
 .venv\Scripts\activate  # Windows
-# source .venv/bin/activate  # macOS/Linux
+
+### source .venv/bin/activate  # macOS/Linux
 pip install -e .
 
 ## Быстрый старт
 
-### 1.Подготовьте CSV-файл с ценами конкурентов
+### 1. Подготовьте CSV-файл с ценами конкурентов
 
 sku,name,competitor,price
 IPHONE15_128,iPhone 15 128GB,TechShop,78990
@@ -48,7 +49,7 @@ IPHONE15_128,iPhone 15 128GB,ElectroCity,81990
 IPHONE15_128,iPhone 15 128GB,PhoneMarket,77990
 IPHONE15_128,iPhone 15 128GB,GadgetWorld,79500
 
-### 2.Запрограммируй код
+### 2. Запрограммируй код
 
 from pricing_framework import PricingEngine
 from pricing_framework.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
@@ -73,7 +74,7 @@ price = engine.get_price(iphone)
 print(f"Рекомендуемая цена: {price:,.0f} ₽")
 print(f"Прибыль: {price - iphone.get_cost():,.0f} ₽")
 
-### 3.Запусти модуль
+### 3. Запусти модуль
 
 python my_script.py
 
@@ -98,12 +99,12 @@ strategy = ClusterStrategy(cluster="mid", adjustment=0)
 
 ## Формат CSV
 
-Колонка - Тип -	Описание
+Файл должен содержать следующие колонки:
 
-sku - str -	Артикул товара (уникальный идентификатор)
-name - str - Наименование товара
-competitor - str - Название магазина-конкурента
-price - int/float - Цена в рублях
+- `sku` (str) — артикул товара (уникальный идентификатор)
+- `name` (str) — наименование товара
+- `competitor` (str) — название магазина-конкурента
+- `price` (int/float) — цена в рублях
 
 ### Структура проекта
 
