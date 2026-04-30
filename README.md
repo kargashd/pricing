@@ -53,6 +53,7 @@ IPHONE15_128,iPhone 15 128GB,GadgetWorld,79500
 
 ### 2. Запрограммируй код
 
+```bash
 from pricing_framework import PricingEngine
 from pricing_framework.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
 from pricing_framework.strategies import FixedMarginStrategy
@@ -75,6 +76,7 @@ price = engine.get_price(iphone)
 
 print(f"Рекомендуемая цена: {price:,.0f} ₽")
 print(f"Прибыль: {price - iphone.get_cost():,.0f} ₽")
+```
 
 ### 3. Запусти модуль
 
