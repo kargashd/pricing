@@ -42,12 +42,14 @@ pip install -e .
 
 ### 1. Подготовьте CSV-файл с ценами конкурентов
 
+```bash
 sku,name,competitor,price
 IPHONE15_128,iPhone 15 128GB,TechShop,78990
 IPHONE15_128,iPhone 15 128GB,MobileStore,79990
 IPHONE15_128,iPhone 15 128GB,ElectroCity,81990
 IPHONE15_128,iPhone 15 128GB,PhoneMarket,77990
 IPHONE15_128,iPhone 15 128GB,GadgetWorld,79500
+```
 
 ### 2. Запрограммируй код
 
@@ -106,7 +108,7 @@ strategy = ClusterStrategy(cluster="mid", adjustment=0)
 - `competitor` (str) — название магазина-конкурента
 - `price` (int/float) — цена в рублях
 
-### Структура проекта
+## Структура проекта
 
 ```bash
 pricing/
