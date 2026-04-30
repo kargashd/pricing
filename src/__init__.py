@@ -1,5 +1,3 @@
-"""Pricing Framework — инструмент для динамического ценообразования."""
-
 from src.core.engine import PricingEngine
 from src.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
 from src.strategies import (
