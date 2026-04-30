@@ -1,7 +1,7 @@
 import pytest
 import tempfile
 import os
-from src.domains.marketplace import CSVCompetitorMonitor, MarketplaceProduct
+from pricing_framework.domains.marketplace import CSVCompetitorMonitor, MarketplaceProduct
 
 
 class TestCSVCompetitorMonitor:

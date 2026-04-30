@@ -1,7 +1,7 @@
 import logging
-from src.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
-from src.strategies import FixedMarginStrategy, LowerMarginStrategy, TrendTrackingStrategy, ClusterStrategy
-from src.core import PricingEngine
+from pricing_framework.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
+from pricing_framework.strategies import FixedMarginStrategy, LowerMarginStrategy, TrendTrackingStrategy, ClusterStrategy
+from pricing_framework.core import PricingEngine
 
 logging.basicConfig(level=logging.INFO)
 

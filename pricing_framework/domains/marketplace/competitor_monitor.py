@@ -1,9 +1,9 @@
 from pathlib import Path
 from typing import List
 
-from src.core.interfaces.competitor_monitor import AbstractMonitor
-from src.core.interfaces.product import AbstractProduct
-from src.utils.csv_loader import CSVLoader
+from pricing_framework.core.interfaces.competitor_monitor import AbstractMonitor
+from pricing_framework.core.interfaces.product import AbstractProduct
+from pricing_framework.utils.csv_loader import CSVLoader
 
 
 class CSVCompetitorMonitor(AbstractMonitor):

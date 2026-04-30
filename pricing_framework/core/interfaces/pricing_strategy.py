@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from src.core.interfaces.product import AbstractProduct
+from pricing_framework.core.interfaces.product import AbstractProduct
 
 
 class AbstractStrategy(ABC):

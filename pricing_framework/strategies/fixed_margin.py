@@ -1,7 +1,7 @@
 """Стратегия фиксированной маржи"""
 from typing import List
-from src.core.interfaces.product import AbstractProduct
-from src.core.interfaces.pricing_strategy import AbstractStrategy
+from pricing_framework.core.interfaces.product import AbstractProduct
+from pricing_framework.core.interfaces.pricing_strategy import AbstractStrategy
 
 
 class FixedMarginStrategy(AbstractStrategy):

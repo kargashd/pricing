@@ -1,6 +1,6 @@
 from typing import Optional
 
-from src.core.interfaces.product import AbstractProduct
+from pricing_framework.core.interfaces.product import AbstractProduct
 
 
 class MarketplaceProduct(AbstractProduct):

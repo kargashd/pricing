@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import Mock
-from src.core.engine import PricingEngine
-from src.domains.marketplace import MarketplaceProduct
+from pricing_framework.core.engine import PricingEngine
+from pricing_framework.domains.marketplace import MarketplaceProduct
 
 
 class TestPricingEngine:

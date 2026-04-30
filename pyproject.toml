@@ -1,14 +1,12 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "pricing-framework"
 version = "0.1.0"
 description = "Фреймворк для динамического ценообразования на маркетплейсах"
-authors = [
-    {name = "Daniil Kargashin", email = "danilo98.24fevral@yandex.ru"}
-]
+authors = [{name = "Daniil Kargashin", email = "danilo98.24fevral@yandex.ru"}]
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -21,6 +19,18 @@ dev = [
     "black>=23.7.0",
     "flake8>=8.0.0",
 ]
+
+[tool.setuptools]
+packages = [
+    "pricing_framework",
+    "pricing_framework.core",
+    "pricing_framework.core.interfaces",
+    "pricing_framework.domains",
+    "pricing_framework.domains.marketplace",
+    "pricing_framework.strategies",
+    "pricing_framework.utils",
+]
+package-dir = {"" = "."}
 
 [tool.black]
 line-length = 100
@@ -45,7 +55,3 @@ python_files = "test_*.py"
 python_classes = "Test*"
 python_functions = "test_*"
 addopts = "-v --strict-markers"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["src*"]

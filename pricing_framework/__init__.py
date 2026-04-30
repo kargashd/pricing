@@ -1,6 +1,6 @@
-from src.core.engine import PricingEngine
-from src.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
-from src.strategies import (
+from pricing_framework.core.engine import PricingEngine
+from pricing_framework.domains.marketplace import MarketplaceProduct, CSVCompetitorMonitor
+from pricing_framework.strategies import (
     FixedMarginStrategy,
     LowerMarginStrategy,
     TrendTrackingStrategy,

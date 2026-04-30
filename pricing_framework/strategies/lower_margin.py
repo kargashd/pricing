@@ -1,6 +1,6 @@
 from typing import List
-from src.core.interfaces.pricing_strategy import AbstractStrategy
-from src.core.interfaces.product import AbstractProduct
+from pricing_framework.core.interfaces.pricing_strategy import AbstractStrategy
+from pricing_framework.core.interfaces.product import AbstractProduct
 
 
 class LowerMarginStrategy(AbstractStrategy):

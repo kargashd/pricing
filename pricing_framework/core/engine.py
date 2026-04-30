@@ -1,7 +1,7 @@
 import logging
-from src.core.interfaces.product import AbstractProduct
-from src.core.interfaces.pricing_strategy import AbstractStrategy
-from src.core.interfaces.competitor_monitor import AbstractMonitor
+from pricing_framework.core.interfaces.product import AbstractProduct
+from pricing_framework.core.interfaces.pricing_strategy import AbstractStrategy
+from pricing_framework.core.interfaces.competitor_monitor import AbstractMonitor
 
 logger = logging.getLogger(__name__)
 

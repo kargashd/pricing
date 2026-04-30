@@ -1,7 +1,7 @@
 import pytest
 import tempfile
 import os
-from src.utils.csv_loader import CSVLoader
+from pricing_framework.utils.csv_loader import CSVLoader
 
 
 class TestCSVLoader:
