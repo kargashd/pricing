@@ -178,7 +178,7 @@ strategy = ClusterStrategy(cluster="mid", adjustment=0)
 
 ```bash
 pricing/
-├── src/
+├── pricing_framework/
 │   ├── core/
 │   │   ├── interfaces/           # Абстрактные классы
 │   │   │   ├── product.py
